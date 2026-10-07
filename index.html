@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВОИР | Всероссийское общество изобретателей и рационализаторов</title>
+    <meta name="description" content="Официальный сайт Всероссийского общества изобретателей и рационализаторов (ОГО ВОИР). Главная платформа патентования, защиты РИД, трансфера технологий и внедрения рационализаторских решений в России.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Иконки Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo-wrapper" title="ВОИР — Всероссийское общество изобретателей и рационализаторов">
+                <img src="assets/logo/logo-color-light.svg" alt="ОГО ВОИР" class="logo-img logo-light">
+                <img src="assets/logo/logo-white.svg" alt="ОГО ВОИР" class="logo-img logo-dark">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">О ВОИР</a>
+                <a href="#audiences" class="nav-link">Направления</a>
+                <a href="#registry" class="nav-link">Реестр разработок</a>
+                <a href="#initiatives" class="nav-link">Премия ВОИР</a>
+                <a href="#process" class="nav-link">Как мы работаем</a>
+                <a href="#partners" class="nav-link">Партнеры</a>
+                <a href="#footer" class="nav-link">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-category="Общая заявка">
+                    <i data-lucide="sparkles"></i> Подать проект
+                </button>
+                <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero Section) -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge hero-badge">
+                    <i data-lucide="shield-check" class="badge-icon"></i>
+                    <span>Общероссийская общественная организация «ВОИР»</span>
+                </div>
+                <h1 class="hero-title">
+                    Превращаем изобретения<br>
+                    <span class="text-accent">в успешный технологический бизнес</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Всероссийское общество изобретателей и рационализаторов объединяет ученых, инженеров, вузы и промышленность для патентования, защиты РИД и масштабирования инноваций по всей России.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large open-modal-btn" data-category="Подача изобретения">
+                        <span>Подать изобретение</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <a href="#registry" class="btn btn-outline btn-large">
+                        <i data-lucide="layers"></i>
+                        <span>Каталог разработок</span>
+                    </a>
+                </div>
+
+                <!-- Быстрый статус -->
+                <div class="hero-features-strip">
+                    <div class="strip-item">
+                        <i data-lucide="award"></i>
+                        <span>Премия ВОИР 2026</span>
+                    </div>
+                    <div class="strip-item">
+                        <i data-lucide="file-check"></i>
+                        <span>Патентная экспертиза</span>
+                    </div>
+                    <div class="strip-item">
+                        <i data-lucide="cpu"></i>
+                        <span>Импортозамещение РИД</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Интерактивная технологическая карта ВОИР -->
+            <div class="hero-visual">
+                <div class="visual-card-glow"></div>
+                <div class="hero-card main-hero-card">
+                    <div class="card-header-tag">
+                        <span class="tag-status live-dot"></span>
+                        <span>Карточка разработок ВОИР</span>
+                        <span class="trl-badge">TRL 8</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="card-icon-box">
+                            <i data-lucide="radio"></i>
+                        </div>
+                        <h3>Акустический диагностический комплекс для трубопроводов</h3>
+                        <p class="card-desc">Патент РФ №2765412. Высокоточный неразрушающий контроль дефектов под давлением.</p>
+                        
+                        <!-- Шкала TRL -->
+                        <div class="trl-progress-wrapper">
+                            <div class="trl-header">
+                                <span>Уровень готовности технологии</span>
+                                <strong>TRL 8 из 9 (Готовый пилот)</strong>
+                            </div>
+                            <div class="trl-bar">
+                                <div class="trl-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-metrics-row">
+                            <div class="metric">
+                                <span class="m-val">15%</span>
+                                <span class="m-lbl">Экономия бюджета</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-val">Роспатент</span>
+                                <span class="m-lbl">Правовая защита</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-val">ПАО «Газпром»</span>
+                                <span class="m-lbl">Индустриальный пилот</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Плавающие мини-карточки -->
+                <div class="floating-badge badge-1">
+                    <i data-lucide="shield-check" class="badge-icon-gold"></i>
+                    <div>
+                        <strong>100% Защита РИД</strong>
+                        <small>Патентный консалтинг</small>
+                    </div>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i data-lucide="trending-up" class="badge-icon-blue"></i>
+                    <div>
+                        <strong>1.2 млрд ₽</strong>
+                        <small>Инвестиции & Гранты</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Кто мы / О ВОИР" -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="badge badge-accent">Национальное достояние</span>
+                    <h2 class="section-title">Опережая время: 90+ лет на службе технологического суверенитета</h2>
+                    <p class="about-text">
+                        <strong>Всероссийское общество изобретателей и рационализаторов (ВОИР)</strong> — главная общественная платформа страны, созданная для всесторонней поддержки изобретателей, правовой защиты авторских прав и внедрения передовых инженерных решений в реальный сектор экономики.
+                    </p>
+                    <p class="about-text">
+                        Экосистема ВОИР связывает 3 ключевых контура технологического развития:
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon-box">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4>1. Университеты и Научные институты</h4>
+                                <p>Фундаментальный источник патентов, научных открытий, лабораторий и студенческих инициатив.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-box gold-box">
+                                <i data-lucide="shield-alert"></i>
+                            </div>
+                            <div>
+                                <h4>2. Экспертный и Патентный центр ВОИР</h4>
+                                <p>Юридическая защита РИД, аудит патентоспособности, подготовка заявок на гранты ФСИ ("Старт", "Студенческий стартап").</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-box blue-box">
+                                <i data-lucide="factory"></i>
+                            </div>
+                            <div>
+                                <h4>3. Промышленность и Инвесторы</h4>
+                                <p>Внедрение рацпредложений на заводах, заказные НИОКР, импортозамещение и привлечение частного капитала.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="map-pin"></i></div>
+                        <h3>75+</h3>
+                        <p>Региональных отделений ВОИР</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="file-text"></i></div>
+                        <h3>10 000+</h3>
+                        <p>Патентов в реестре</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="history"></i></div>
+                        <h3>90+ лет</h3>
+                        <p>Истории и традиций</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="check-circle-2"></i></div>
+                        <h3>500+</h3>
+                        <p>Пилотов на производстве</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="banknote"></i></div>
+                        <h3>1.2 млрд ₽</h3>
+                        <p>Привлеченных инвестиций</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="building-2"></i></div>
+                        <h3>100+</h3>
+                        <p>Вузов-партнеров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Галерея мероприятий (Бегущая строка) -->
+        <div class="events-gallery-wrapper">
+            <div class="container text-center">
+                <h3 class="gallery-title">Мероприятия, форумы и Премия ВОИР</h3>
+                <p class="gallery-desc">Всероссийская активность для изобретателей и промышленников</p>
+            </div>
+            
+            <div class="events-gallery">
+                <div class="gallery-track">
+                    <div class="gallery-item item-1">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="award" class="media-icon"></i>
+                        <span class="media-badge gold-badge">Премия ВОИР</span>
+                        <div class="gallery-info">
+                            <h4>Церемония вручения Премии ВОИР</h4>
+                            <p>Москва, РАН</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-2">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="presentation" class="media-icon"></i>
+                        <span class="media-badge video-badge">Питч-сессия</span>
+                        <div class="gallery-info">
+                            <h4>Выставка изобретений и рацпредложений</h4>
+                            <p>Индустриальный диалог</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-3">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="users" class="media-icon"></i>
+                        <span class="media-badge">Форум</span>
+                        <div class="gallery-info">
+                            <h4>Съезд Всероссийского общества</h4>
+                            <p>Региональные делегаты</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-4">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="microscope" class="media-icon"></i>
+                        <span class="media-badge video-badge">Технологии</span>
+                        <div class="gallery-info">
+                            <h4>Молодежное ВОИР в УГНТУ</h4>
+                            <p>Лабораторные тесты</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-5">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="cpu" class="media-icon"></i>
+                        <span class="media-badge">Роспатент</span>
+                        <div class="gallery-info">
+                            <h4>Патентный интенсив ВОИР</h4>
+                            <p>Обучение авторов</p>
+                        </div>
+                    </div>
+
+                    <!-- Дубликат для бесконечной прокрутки -->
+                    <div class="gallery-item item-1">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="award" class="media-icon"></i>
+                        <span class="media-badge gold-badge">Премия ВОИР</span>
+                        <div class="gallery-info">
+                            <h4>Церемония вручения Премии ВОИР</h4>
+                            <p>Москва, РАН</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-2">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="presentation" class="media-icon"></i>
+                        <span class="media-badge video-badge">Питч-сессия</span>
+                        <div class="gallery-info">
+                            <h4>Выставка изобретений и рацпредложений</h4>
+                            <p>Индустриальный диалог</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-3">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="users" class="media-icon"></i>
+                        <span class="media-badge">Форум</span>
+                        <div class="gallery-info">
+                            <h4>Съезд Всероссийского общества</h4>
+                            <p>Региональные делегаты</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-4">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="microscope" class="media-icon"></i>
+                        <span class="media-badge video-badge">Технологии</span>
+                        <div class="gallery-info">
+                            <h4>Молодежное ВОИР в УГНТУ</h4>
+                            <p>Лабораторные тесты</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-5">
+                        <div class="gallery-overlay"></div>
+                        <i data-lucide="cpu" class="media-icon"></i>
+                        <span class="media-badge">Роспатент</span>
+                        <div class="gallery-info">
+                            <h4>Патентный интенсив ВОИР</h4>
+                            <p>Обучение авторов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Для кого мы работаем" (Аудитории) -->
+    <section id="audiences" class="audiences">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Экосистема возможностей</span>
+                <h2 class="section-title">Кому помогает ВОИР</h2>
+                <p class="section-desc">Создаем условия для роста изобретателей, эффективности заводов и коммерциализации науки</p>
+            </div>
+            
+            <div class="audiences-grid">
+                
+                <a href="#inventors" class="audience-card">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="lightbulb" class="card-icon"></i>
+                    </div>
+                    <h3>Изобретателям & Ученым</h3>
+                    <p>Поможем оформить патент, защитить авторство, получить гранты (ФСИ, Минобрнауки) и найти инвестора или завод-заказчик.</p>
+                    <span class="card-link">Подробнее <i data-lucide="chevron-right"></i></span>
+                </a>
+
+                <a href="#business" class="audience-card">
+                    <div class="card-icon-wrapper gold-wrapper">
+                        <i data-lucide="factory" class="card-icon"></i>
+                    </div>
+                    <h3>Бизнесу & Предприятиям</h3>
+                    <p>Импортозамещение, заказная разработка, доступ к базе готовых патентов и внедрение системы рацпредложений на заводах.</p>
+                    <span class="card-link">Подробнее <i data-lucide="chevron-right"></i></span>
+                </a>
+
+                <a href="#investors" class="audience-card">
+                    <div class="card-icon-wrapper blue-wrapper">
+                        <i data-lucide="line-chart" class="card-icon"></i>
+                    </div>
+                    <h3>Инвесторам & Фондам</h3>
+                    <p>Проверенный пайплайн высокотехнологичных патентов с подтвержденным TRL, юридической экспертизой и готовым пилотом.</p>
+                    <span class="card-link">Подробнее <i data-lucide="chevron-right"></i></span>
+                </a>
+
+                <a href="#universities" class="audience-card">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="graduation-cap" class="card-icon"></i>
+                    </div>
+                    <h3>Вузам & Молодежи</h3>
+                    <p>Развитие "Молодежного ВОИР", создание инжиниринговых центров, коммерциализация РИД вузов и участие в конкурсах.</p>
+                    <span class="card-link">Подробнее <i data-lucide="chevron-right"></i></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Интерактивный Реестр разработок и патентов ВОИР -->
+    <section id="registry" class="registry-section section-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Каталог РИД ВОИР</span>
+                <h2 class="section-title">Витрина запатентованных решений</h2>
+                <p class="section-desc">Отбранные технологии с подтвержденной юридической чистотой и возможностью пилота</p>
+            </div>
+
+            <!-- Фильтры категорий -->
+            <div class="registry-tabs">
+                <button class="tab-btn active" data-filter="all">Все отрасли</button>
+                <button class="tab-btn" data-filter="it">IT & ИИ</button>
+                <button class="tab-btn" data-filter="industry">Машиностроение & Промышленность</button>
+                <button class="tab-btn" data-filter="energy">Энергетика & Экология</button>
+                <button class="tab-btn" data-filter="biomed">Биотех & Медицина</button>
+                <button class="tab-btn" data-filter="materials">Новые материалы</button>
+            </div>
+
+            <!-- Сетка карточек патентов -->
+            <div class="registry-grid">
+                <!-- Карточка 1 -->
+                <div class="invention-card" data-category="materials">
+                    <div class="inv-header">
+                        <span class="inv-category">Новые материалы</span>
+                        <span class="inv-trl">TRL 7</span>
+                    </div>
+                    <h4 class="inv-title">Компактный плазменный генератор для синтеза наноструктур</h4>
+                    <p class="inv-desc">Патент РФ №2748192. Позволяет производить углеродные нанотрубки с чистотой 99.4% для микроэлектроники.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Москва</span>
+                        <span><i data-lucide="shield-check"></i> Патент Роспатента</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос паспорта: Плазменный генератор">
+                            <span>Паспорт РИД</span>
+                            <i data-lucide="file-text"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="invention-card" data-category="it">
+                    <div class="inv-header">
+                        <span class="inv-category">IT & ИИ</span>
+                        <span class="inv-trl">TRL 8</span>
+                    </div>
+                    <h4 class="inv-title">ИИ-система неразрушающего контроля сварных швов</h4>
+                    <p class="inv-desc">Патент РФ №2794102. Компьютерное зрение детектирует микротрещины металлоконструкций на скорости до 5 м/с.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Уфа (УГНТУ)</span>
+                        <span><i data-lucide="check-circle-2"></i> Внедрено на заводе</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос пилота: ИИ-контроль швов">
+                            <span>Запросить пилот</span>
+                            <i data-lucide="play-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="invention-card" data-category="biomed">
+                    <div class="inv-header">
+                        <span class="inv-category">Биотех & Медицина</span>
+                        <span class="inv-trl">TRL 6</span>
+                    </div>
+                    <h4 class="inv-title">Биоразлагаемый полимерный гидрогель для агросектора</h4>
+                    <p class="inv-desc">Патент РФ №2710394. Удерживает влагу в почве в 500 раз больше своего веса, снижая полив на 40%.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Краснодар</span>
+                        <span><i data-lucide="sprout"></i> Эко-сертификат</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос паспорта: Агро-гидрогель">
+                            <span>Паспорт РИД</span>
+                            <i data-lucide="file-text"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="invention-card" data-category="energy">
+                    <div class="inv-header">
+                        <span class="inv-category">Энергетика</span>
+                        <span class="inv-trl">TRL 8</span>
+                    </div>
+                    <h4 class="inv-title">Акустический диагностический комплекс для нефтегазопроводов</h4>
+                    <p class="inv-desc">Патент РФ №2765412. Бесконтактное выявление утечек газа и коррозии со 100% точностью под давлением.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Санкт-Петербург</span>
+                        <span><i data-lucide="zap"></i> Промышленная серия</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос пилота: Диагностический комплекс">
+                            <span>Запросить пилот</span>
+                            <i data-lucide="play-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="invention-card" data-category="industry">
+                    <div class="inv-header">
+                        <span class="inv-category">Машиностроение</span>
+                        <span class="inv-trl">TRL 7</span>
+                    </div>
+                    <h4 class="inv-title">Рационализаторский резец с лазерной закалкой кромки</h4>
+                    <p class="inv-desc">Патент РФ №2781190. Увеличивает стойкость инструмента при обработке титановых сплавов в 4.2 раза.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Екатеринбург</span>
+                        <span><i data-lucide="wrench"></i> Рацпредложение</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос паспорта: Лазерный резец">
+                            <span>Паспорт РИД</span>
+                            <i data-lucide="file-text"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="invention-card" data-category="it">
+                    <div class="inv-header">
+                        <span class="inv-category">IT & ИИ</span>
+                        <span class="inv-trl">TRL 9</span>
+                    </div>
+                    <h4 class="inv-title">Платформа цифровых двойников промышленного оборудования</h4>
+                    <p class="inv-desc">Свидетельство Роспатента №202361049. Прогнозирует поломки станков ЧПУ за 14 дней до сбоя.</p>
+                    <div class="inv-meta">
+                        <span><i data-lucide="map-pin"></i> Казань</span>
+                        <span><i data-lucide="check-square"></i> Коммерческие продажи</span>
+                    </div>
+                    <div class="inv-footer">
+                        <button class="btn btn-outline btn-sm open-modal-btn" data-category="Запрос демо: Цифровые двойники">
+                            <span>Запросить демо</span>
+                            <i data-lucide="monitor"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center margin-top-40">
+                <button class="btn btn-primary btn-large open-modal-btn" data-category="Полный реестр ВОИР">
+                    <span>Запросить доступ к полному реестру (10 000+ РИД)</span>
+                    <i data-lucide="database"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Детальные блоки аудиторий -->
+    
+    <!-- Изобретателям -->
+    <section id="inventors" class="detail-section section-white">
+        <div class="container detail-container">
+            <div class="detail-content">
+                <span class="badge">Контур Изобретателя</span>
+                <h2 class="detail-title">Изобретателям: Полная правовая защита и путь к капитализации</h2>
+                <p class="detail-text">Мы помогаем авторам и научным коллективам пройти путь от чертежа или лабораторной гипотезы до запатентованного коммерческого продукта.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle-2"></i> <strong>Бесплатный экспресс-аудит РИД:</strong> Оценка патентной чистоты и мировой новизны от экспертов ВОИР.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Оформление патентов Роспатента:</strong> Составление формулы изобретения и регистрация прав.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Привлечение грантов:</strong> Помощь в оформлении заявок на "Студенческий стартап" (1 млн ₽), "Старт-1" (4 млн ₽) и программы Минобрнауки.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Прямой выход на заводы:</strong> Презентация вашей технологии индустриальным партнерам ВОИР.</li>
+                </ul>
+                <button class="btn btn-primary open-modal-btn" data-category="Заявка от Изобретателя">Подать заявку на экспертизу</button>
+            </div>
+            <div class="detail-visual">
+                <div class="visual-placeholder img-investors">
+                    <i data-lucide="lightbulb" class="visual-icon"></i>
+                    <div class="visual-card-inside">
+                        <div class="vc-header"><i data-lucide="shield-check"></i> <span>Роспатент Свидетельство</span></div>
+                        <p class="vc-title">Защита авторских прав ВОИР</p>
+                        <small>Оформлено свыше 10 000 патентов по всей России</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Предпринимателям и Заводам -->
+    <section id="business" class="detail-section section-light">
+        <div class="container detail-container reverse">
+            <div class="detail-content">
+                <span class="badge badge-accent">Промышленный контур</span>
+                <h2 class="detail-title">Бизнесу и Предприятиям: Импортозамещение и рацпредложения</h2>
+                <p class="detail-text">Решаем сложнейшие технологические задачи производств через экосистему лучших инженеров и рационализаторов России.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle-2"></i> <strong>Готовые патенты под ключ:</strong> Подбор запатентованных решений под ваши параметры импортозамещения.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Внедрение Рационализаторства 2.0:</strong> Запуск системы подачи рацпредложений сотрудников (сокращение издержек на 10-20%).</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Заказной НИОКР:</strong> Постановка задач инженерам ВОИР для доработки оборудования и материалов.</li>
+                </ul>
+                <button class="btn btn-primary open-modal-btn" data-category="Заявка от Предприятия">Заказать подбор технологий</button>
+            </div>
+            <div class="detail-visual">
+                <div class="visual-placeholder img-business">
+                    <i data-lucide="factory" class="visual-icon"></i>
+                    <div class="visual-card-inside gold-border">
+                        <div class="vc-header"><i data-lucide="trending-up"></i> <span>Эффективность завода</span></div>
+                        <p class="vc-title">Рационализаторство 2.0</p>
+                        <small>Экономический эффект внедрения рацпредложений</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Инвесторам -->
+    <section id="investors" class="detail-section section-white">
+        <div class="container detail-container">
+            <div class="detail-content">
+                <span class="badge">Инвестиционный контур</span>
+                <h2 class="detail-title">Инвесторам: Доступ к проверенным технологическим активам</h2>
+                <p class="detail-text">Инвестируйте в патентные решения с высокой степенью защиты и юридически очищенными правами.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle-2"></i> <strong>Фильтр и верификация ВОИР:</strong> Каждая технология проходит экспертизу патентных поверенных.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Синдицированные сделки:</strong> Клубный формат соинвестирования с индустриальными партнерами.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Понятная монетизация:</strong> Роялти от лицензионных договоров или продажи доли в стартапе.</li>
+                </ul>
+                <button class="btn btn-primary open-modal-btn" data-category="Заявка Инвестора">Получить инвест-пайплайн ВОИР</button>
+            </div>
+            <div class="detail-visual">
+                <div class="visual-placeholder img-students">
+                    <i data-lucide="line-chart" class="visual-icon"></i>
+                    <div class="visual-card-inside">
+                        <div class="vc-header"><i data-lucide="dollar-sign"></i> <span>Инвестиции в РИД</span></div>
+                        <p class="vc-title">Пайплайн патентов TRL 6-8</p>
+                        <small>Прозрачная юридическая модель</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Университетам -->
+    <section id="universities" class="detail-section section-light">
+        <div class="container detail-container reverse">
+            <div class="detail-content">
+                <span class="badge">Образовательный контур</span>
+                <h2 class="detail-title">Университетам и Молодежи: Молодежное ВОИР</h2>
+                <p class="detail-text">Вовлекаем студентов и молодых исследователей в техническое творчество и построение предпринимательских траекторий.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle-2"></i> <strong>Клубы Молодежного ВОИР:</strong> Открытие студенческих бюро изобретательства на базе вуза.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Коммерциализация РИД вуза:</strong> Аудит и упаковка интеллектуальной собственности университетов.</li>
+                    <li><i data-lucide="check-circle-2"></i> <strong>Молодежная Премия ВОИР:</strong> Участие студентов во всероссийских конкурсах с призовым фондом.</li>
+                </ul>
+                <button class="btn btn-primary open-modal-btn" data-category="Партнерство с Вузом">Открыть отделение ВОИР в Вузе</button>
+            </div>
+            <div class="detail-visual">
+                <div class="visual-placeholder img-universities">
+                    <i data-lucide="graduation-cap" class="visual-icon"></i>
+                    <div class="visual-card-inside">
+                        <div class="vc-header"><i data-lucide="award"></i> <span>Молодежное ВОИР</span></div>
+                        <p class="vc-title">Студенческое изобретательство</p>
+                        <small>Партнёрская сеть из 100+ вузов России</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Флагманские Инициативы / Премия ВОИР -->
+    <section id="initiatives" class="initiatives-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-gold">Главная награда страны</span>
+                <h2 class="section-title">Всероссийская Премия ВОИР</h2>
+                <p class="section-desc">«Нобелевская премия» для российских изобретателей и рационализаторов</p>
+            </div>
+
+            <div class="initiatives-grid">
+                <div class="init-card gold-init-card">
+                    <div class="init-badge">Ежегодный конкурс</div>
+                    <div class="init-icon-wrapper">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>Премия ВОИР 2026</h3>
+                    <p>Главный всероссийский конкурс гражданских изобретений с многомиллионным призовым фондом и поддержкой РАН, Роспатента и ведущих госкорпораций.</p>
+                    <ul class="init-features">
+                        <li><i data-lucide="check"></i> Номинация «Изобретатель года»</li>
+                        <li><i data-lucide="check"></i> Номинация «Молодой изобретатель года»</li>
+                        <li><i data-lucide="check"></i> Прямой питч перед инвесторами и главами заводов</li>
+                    </ul>
+                    <button class="btn btn-gold open-modal-btn" data-category="Заявка на Премию ВОИР">
+                        <span>Подать заявку на Премию</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="init-card">
+                    <div class="init-badge">Промышленный проект</div>
+                    <div class="init-icon-wrapper">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Рационализаторство 2.0</h3>
+                    <p>Национальная система обучения и цифровизации рацпредложений на заводах. Повышает производительность труда и оптимизирует технологические процессы.</p>
+                    <ul class="init-features">
+                        <li><i data-lucide="check"></i> Цифровой кабинет рационализатора</li>
+                        <li><i data-lucide="check"></i> Выплата авторских вознаграждений</li>
+                        <li><i data-lucide="check"></i> Бережливое производство (Lean)</li>
+                    </ul>
+                    <button class="btn btn-outline open-modal-btn" data-category="Внедрение Рационализаторства">
+                        <span>Внедрить на предприятии</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="init-card">
+                    <div class="init-badge">Правовой центр</div>
+                    <div class="init-icon-wrapper">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Патентный Экспресс-Аудит</h3>
+                    <p>Специальная служба ВОИР для быстрой проверки заявки на патент, защиты от копирования и подготовки пакета документов для Роспатента.</p>
+                    <ul class="init-features">
+                        <li><i data-lucide="check"></i> Проверка патентной чистоты за 48 часов</li>
+                        <li><i data-lucide="check"></i> Консультация патентных поверенных</li>
+                        <li><i data-lucide="check"></i> Оформление лицензионных договоров</li>
+                    </ul>
+                    <button class="btn btn-outline open-modal-btn" data-category="Патентный аудит">
+                        <span>Заказать аудит РИД</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс работы ВОИР (4 Шага) -->
+    <section id="process" class="process-section section-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Путь разработки</span>
+                <h2 class="section-title">Как мы работаем: От идеи до производства</h2>
+                <p class="section-desc">Прозрачный конвейер защиты и коммерциализации технологий</p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i data-lucide="file-text"></i></div>
+                    <h4>Заявка и Экспертиза</h4>
+                    <p>Подача проекта в ВОИР. Проверка новизны, оценка TRL и первичный аудит патентной чистоты.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i data-lucide="shield-check"></i></div>
+                    <h4>Правовая защита</h4>
+                    <p>Оформление патента Роспатента, защита коммерческой тайны и закрепление авторских прав.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i data-lucide="layers"></i></div>
+                    <h4>Упаковка и Гранты</h4>
+                    <p>Подготовка опытного образца, участие в программах ФСИ ("Старт") и упаковка инвест-паспорта.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i data-lucide="rocket"></i></div>
+                    <h4>Пилот и Продажи</h4>
+                    <p>Вывод решения на заводы-партнеры ВОИР, заключение лицензионных соглашений и роялти.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Партнеры -->
+    <section id="partners" class="partners section-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Институты развития и госкорпорации</span>
+                <h2 class="section-title">Партнеры ВОИР</h2>
+                <p class="section-desc">Организации, с которыми мы вместе строим технологическое будущее России</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <i data-lucide="landmark"></i>
+                    <span>Роспатент</span>
+                </div>
+                <div class="partner-card">
+                    <i data-lucide="building"></i>
+                    <span>Минобрнауки РФ</span>
+                </div>
+                <div class="partner-card">
+                    <i data-lucide="sparkles"></i>
+                    <span>Фонд содействия инновациям (ФСИ)</span>
+                </div>
+                <div class="partner-card">
+                    <i data-lucide="graduation-cap"></i>
+                    <span>УГНТУ</span>
+                </div>
+                <div class="partner-card">
+                    <i data-lucide="cpu"></i>
+                    <span>РАН</span>
+                </div>
+                <div class="partner-card">
+                    <i data-lucide="factory"></i>
+                    <span>Минпромторг РФ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <span class="cta-badge">Присоединяйтесь к ВОИР</span>
+                    <h3>Есть изобретение или рацпредложение?</h3>
+                    <p>Подайте проект в Экспертный совет ВОИР. Мы поможем с патентом, грантами и поиском индустриального заказчика.</p>
+                </div>
+                <button class="btn btn-gold btn-large open-modal-btn" data-category="Финальный CTA">
+                    <span>Подать проект в ВОИР</span>
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo-wrapper">
+                        <img src="assets/logo/logo-white.svg" alt="ОГО ВОИР" class="footer-logo-img">
+                    </a>
+                    <p>Общероссийская общественная организация «Всероссийское общество изобретателей и рационализаторов» (ОГО ВОИР).</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" title="Telegram ВОИР"><i data-lucide="send"></i></a>
+                        <a href="#" class="social-link" title="VK ВОИР"><i data-lucide="globe"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Направления</h4>
+                    <ul>
+                        <li><a href="#inventors">Изобретателям</a></li>
+                        <li><a href="#business">Бизнесу и Заводам</a></li>
+                        <li><a href="#investors">Инвесторам</a></li>
+                        <li><a href="#universities">Вузам и Молодежи</a></li>
+                        <li><a href="#registry">Реестр разработок</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Инициативы</h4>
+                    <ul>
+                        <li><a href="#initiatives">Премия ВОИР 2026</a></li>
+                        <li><a href="#initiatives">Рационализаторство 2.0</a></li>
+                        <li><a href="#initiatives">Патентный экспресс-аудит</a></li>
+                        <li><a href="#process">Процесс работы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4>Контакты ВОИР</h4>
+                    <p><a href="tel:+74950000000" class="contact-link"><i data-lucide="phone"></i> +7 (495) 123-45-67</a></p>
+                    <p><a href="mailto:info@voir.ru" class="contact-link"><i data-lucide="mail"></i> info@voir.ru</a></p>
+                    <p><a href="#" class="contact-link"><i data-lucide="map-pin"></i> г. Москва, Бережковская наб., д. 24</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ВОИР (Общероссийская общественная организация «Всероссийское общество изобретателей и рационализаторов»). Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно подачи заявки в ВОИР -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-window">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Закрыть модальное окно">
+                <i data-lucide="x"></i>
+            </button>
+            
+            <div class="modal-header">
+                <div class="modal-badge"><i data-lucide="shield-check"></i> Экспертный совет ВОИР</div>
+                <h3 id="modalTitle">Заявка в ВОИР</h3>
+                <p>Заполните форму, и эксперты ВОИР свяжутся с вами для патентного аудита и сопровождения проекта.</p>
+            </div>
+
+            <form class="modal-form" id="voirForm" onsubmit="handleFormSubmit(event)">
+                <input type="hidden" id="formCategoryInput" name="category" value="Общая заявка">
+                
+                <div class="form-group">
+                    <label for="formName">Ваше имя или наименование организации *</label>
+                    <input type="text" id="formName" name="name" placeholder="Например: Иван Иванов или ООО «Техно»" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="formEmail">Email *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="name@domain.ru" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formPhone">Телефон *</label>
+                        <input type="tel" id="formPhone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="formRole">Ваш статус</label>
+                    <select id="formRole" name="role">
+                        <option value="inventor">Изобретатель / Ученый</option>
+                        <option value="enterprise">Представитель предприятия / Завода</option>
+                        <option value="student">Студент / Молодой ученый</option>
+                        <option value="investor">Инвестор / Фонд</option>
+                        <option value="university">Университет</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="formStage">Стадия готовности проекта (TRL)</label>
+                    <select id="formStage" name="stage">
+                        <option value="idea">Идея / Изыскания (TRL 1-2)</option>
+                        <option value="patent">Есть патент / Заявка в Роспатент (TRL 3-4)</option>
+                        <option value="prototype">Рабочий лабораторный прототип (TRL 5-6)</option>
+                        <option value="pilot">Готово к пилоту / Опытный образец (TRL 7-8)</option>
+                        <option value="commercial">Серийное производство / Продажи (TRL 9)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="formDesc">Краткое описание разработки / Запроса</label>
+                    <textarea id="formDesc" name="desc" rows="3" placeholder="Опишите суть изобретения, патент при наличии или потребность вашего производства..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-full">
+                    <span>Отправить заявку в ВОИР</span>
+                    <i data-lucide="send"></i>
+                </button>
+                <small class="form-privacy-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных и сохранение конфиденциальности РИД.</small>
+            </form>
+        </div>
+    </div>
+
+    <!-- Уведомление о submission (Toast) -->
+    <div class="toast-notification" id="toastNotification">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <div>
+            <strong>Заявка успешно отправлена!</strong>
+            <p>Эксперт ВОИР свяжется с вами в течение рабочего дня.</p>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script>
+        // Инициализация Lucide иконок
+        lucide.createIcons();
+
+        // Переключение хедера при скролле
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Мобильное меню (Burger)
+        const burgerBtn = document.getElementById('burgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        burgerBtn.addEventListener('click', () => {
+            burgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Закрытие мобильного меню при клике по ссылке
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                burgerBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Модальное окно
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        const modalTitle = document.getElementById('modalTitle');
+        const formCategoryInput = document.getElementById('formCategoryInput');
+
+        document.querySelectorAll('.open-modal-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const category = btn.getAttribute('data-category') || 'Общая заявка';
+                formCategoryInput.value = category;
+                modalTitle.textContent = category;
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        modalCloseBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Обработка отправки формы
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            closeModal();
+
+            // Показать toast
+            const toast = document.getElementById('toastNotification');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+
+            document.getElementById('voirForm').reset();
+        }
+
+        // Фильтрация реестра разработок
+        const tabBtns = document.querySelectorAll('.registry-tabs .tab-btn');
+        const invCards = document.querySelectorAll('.invention-card');
+
+        tabBtns.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tab.classList.add('active');
+
+                const filter = tab.getAttribute('data-filter');
+
+                invCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                        setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(15px)';
+                        setTimeout(() => { card.style.display = 'none'; }, 300);
+                    }
+                });
+            });
+        });
+
+        // Анимация появление блоков при скролле
+        const observerOptions = {
+            root: null,
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(`
+            .section-title, .section-desc, 
+            .feature-item, .stat-card, 
+            .audience-card, .invention-card,
+            .init-card, .step-card, .partner-card,
+            .detail-content, .detail-visual, .cta-banner
+        `).forEach(el => {
+            el.classList.add('animate-on-scroll');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
